@@ -14,29 +14,20 @@ class HomeController {
     		"2014", 
     		"2013", 
     		"2012"]
-    	def staticSubjects = [
-    		["CS", "Computer Science"], 
-    		["ENGR", "Engineering"]]
+    	def staticDepartments = [
+    		"Computer Science", 
+            "Dance",
+    		"Engineering", 
+            "Ethnic Studies"]
     	def staticDays = [
     		"M", "T", "W", "R", "F"]
-    	def staticType = [
-    		"Lecture", 
-    		"Discussion", 
-    		"Laboratory"]
+    	//def staticType = [
+        //["Lecture",     "Discussion",   "Laboratory"], 
+        //["LEC",         "DIS",          "LAB"       ]];
+    	def staticType = ["Lecture",     "Discussion",   "Laboratory"];
+        
 
-    	def staticTitles = [
-    		"Course #", 
-			"Sec.",
-			"Call #",
-			"Course Title", 
-			"Type", 
-			"Day", 
-			"Time", 
-			"Avail Seats", 
-			"Status"] 
-    	
-      	[ quarters: staticQuarters, years: staticYears, subjects: staticSubjects, days: staticDays, type: staticType,
-      	titles: staticTitles ]
+      	[ quarters: staticQuarters, years: staticYears, departments: staticDepartments, days: staticDays, type: staticType ]
 
     }
 }
